@@ -1,7 +1,7 @@
 package com.harman.project;
 
 abstract class Bank {
-        public abstract void getBalance();
+        abstract void getBalance();
     }
     class BankA extends Bank{
         public void getBalance(){
@@ -9,12 +9,12 @@ abstract class Bank {
         }
     }
     class BankB extends Bank{
-        public void getBalance(){
+        void getBalance(){
             System.out.println("Deposited Balance is = $150");
         }
     }
     class BankC extends Bank{
-        public void getBalance(){
+        void getBalance(){
             System.out.println("Deposited Balance is = $200");
         }
     }
@@ -27,4 +27,4 @@ abstract class Bank {
             BankC Balance3 = new BankC();
             Balance3.getBalance();
         }
-    }
+}
